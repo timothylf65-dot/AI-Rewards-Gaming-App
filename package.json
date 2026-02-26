@@ -1,0 +1,12 @@
+{
+  "name": "placeholder-name",
+  "version": "1.0.0",
+  "description": "Placeholder description",
+  "main": "index.js",
+  "scripts": {
+    "start-backend": "node backend/server.js",
+    "start-frontend": "node frontend/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
