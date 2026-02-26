@@ -1,1 +1,8 @@
-// Placeholder for user routes
+const express = require('express');
+const router = express.Router();
+const userController = require('../controllers/userController');
+
+// Define user-related routes here
+// Example: router.get('/users', userController.getUsers);
+
+module.exports = router;
