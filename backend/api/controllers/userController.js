@@ -1,11 +1,18 @@
-exports.getUsers = (req, res) => {
-    // TODO: Implement logic to retrieve users
-    res.json({ message: 'getUsers not implemented yet' });
+/**
+ * User Controller
+ * Handles user registration and login operations.
+ */
+
+// Register a new user
+exports.registerUser = (req, res) => {
+    // TODO: Implement logic to register a new user (validate input, persist to DB)
+    res.json({ message: 'registerUser not implemented yet' });
 };
 
-exports.createUser = (req, res) => {
-    // TODO: Implement logic to create a new user
-    res.json({ message: 'createUser not implemented yet' });
+// Log in an existing user
+exports.loginUser = (req, res) => {
+    // TODO: Implement logic for user authentication (verify credentials, generate tokens)
+    res.json({ message: 'loginUser not implemented yet' });
 };
 
-// Add more user-related controller functions as needed
+// Additional user-related controller functions can be added here (e.g., getProfile, updateProfile)
