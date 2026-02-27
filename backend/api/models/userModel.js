@@ -1,12 +1,9 @@
-// Placeholder schema/model for User
+const mongoose = require('mongoose');
 
-// Example using Mongoose:
-// const mongoose = require('mongoose');
-// const userSchema = new mongoose.Schema({
-//     username: { type: String, required: true },
-//     // Add more fields here
-// });
-// module.exports = mongoose.model('User', userSchema);
+const userSchema = new mongoose.Schema({
+  username: { type: String, required: true },
+  email: { type: String, required: true },
+  // Add more user fields such as password, rewards, etc.
+}, { timestamps: true });
 
-// For now, export an empty object or placeholder
-module.exports = {};
+module.exports = mongoose.model('User', userSchema);
