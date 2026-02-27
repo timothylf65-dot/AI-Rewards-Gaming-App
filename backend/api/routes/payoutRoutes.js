@@ -1,19 +1,28 @@
 const express = require('express');
 const router = express.Router();
 
-// Middleware for authentication can be applied to payout routes
+// Placeholder route to initiate a payout request
+router.post('/', (req, res) => {
+  // TODO: Initiate a payout request for the current user
+  res.status(501).json({ message: 'Payout request not implemented' });
+});
 
-// Payout endpoints
-// Example: router.post('/', (req, res) => {
-//   // Initiate a payout request
-// });
-// Example: router.get('/:payoutId/status', (req, res) => {
-//   // Check payout status
-// });
+// Placeholder route to get payout status by ID
+router.get('/:payoutId/status', (req, res) => {
+  // TODO: Return the status of a payout
+  res.status(501).json({ message: 'Get payout status not implemented' });
+});
 
-// Game session tracking or points ledger might influence payout eligibility
-// Example: router.post('/:userId/convert-points', (req, res) => {
-//   // Convert points ledger into payout
-// });
+// Placeholder route to list all payout requests for a user
+router.get('/user/:userId', (req, res) => {
+  // TODO: List payouts for a specific user
+  res.status(501).json({ message: 'List user payouts not implemented' });
+});
+
+// Placeholder route to cancel a payout request
+router.delete('/:payoutId', (req, res) => {
+  // TODO: Cancel a payout request
+  res.status(501).json({ message: 'Cancel payout not implemented' });
+});
 
 module.exports = router;
